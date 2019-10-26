@@ -1,3 +1,7 @@
 h1, p {
-	color: #333;
+	color: #212529;
+}
+
+body {
+	background-color: #e9ecef;
 }
