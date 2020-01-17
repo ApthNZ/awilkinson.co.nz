@@ -36,37 +36,48 @@
 
     <div class="row">
       <div class="col">
+      	<br>
         <img src="404.jpg" alt="Fallen icecream" class="img-fluid, rounded">
-        <h2>Hello, World!</h2>
+        <h2>Containers, DevOps, and Other Things I Don't Understand</h2>
+        <i>17/01/20</i>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <p>This is where I'll put stuff about me and what I'm doing.
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <img src="404.jpg" alt="Fallen icecream" class="img-fluid, rounded">
-        <h2>Maybe this is what blog posts will look like?</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>Who knows!
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <img src="404.jpg" alt="Fallen icecream" class="img-fluid, rounded">
-        <h2>We should probably have images somewhere.</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <p>I'll probably plagiarise Miguel Grinberg's flask tutorial. Again. Thanks Miguel!
+        <p>So I decided to learn about containers. Downloaded Docker, went off on a random tangent hopping on the Windows Insider programme and getting WSL2 working so Docker could use my WSL Ubuntu VM... spun up a vanilla Alpine container and watched it ping 8.8.8.8. Cool.
+        <p>Part of the Docker newbie tutorial involved signing up for Docker Hub and pushing a newly built image up to a personal repo. While browsing through the repo settings I noticed Automated Builds.
+        <p>Interesting.
+        <p>A little while later, my "Hello, World!" experiment has turned into a Flask API, my github pushes are magically assembling containers, and I'm having visions of automated tests and continuous delivery.
+        <p>Not that I know how DevOps works. I barely know how Python works.
+        <br>
+        <p>At the moment, my workflow looks something like this:
+        <ul>
+        	<li>Decide on a new feature (like returning a 404 as JSON instead of HTML)</li>
+        	<li>Create and checkout a feature branch in git</li>
+        	<li>Write some code</li>
+        	<li>Manually test the code (cURL etc)</li>
+        	<li>Build a test docker image</li>
+        	<li>Manually run and test the docker image</li>
+        	<li>Commit and push the feature branch</li>
+        	<li>Checkout master and merge the feature branch</li>
+        	<li>Push master up to github</li>
+        	<li>Check the Docker Hub autobuild was successful (currently no automated tests)</li>
+        	<li>Pull the newly built docker image</li>
+        	<li>Manually test the newly built docker image... and we're done!</li>
+        	<li>...almost. Remove the feature branch from local and github, and fetch the updated branch list.</li>
+        </ul>
+        <p>Automated testing is next on the chopping block, but first I need to figure out how to write some. Tests, at all. Manual ones. I've heard good things about PyTest, and might look at CoveragePy as well (whether or not that's necessary I don't know yet).
+        <p>On a different note, Sublime Text 3 has been lovely. I'd used Atom in the past, and it felt bulky and sluggish. All I really need is a text editor with nice colour formatting and a linter - which is exactly what Sublime is. Yeah. Lovely.
+        <br>
+        <p>Things that are currently interesting and helpful:
+        <ul>
+        	<li><a href="https://www.sublimetext.com/3">Sublime Text 3</a></li>
+        	<li><a href="http://www.sublimelinter.com/en/stable/">SublimeLinter</a></li>
+        	<li><a href="https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask">Miguel Grinberg's Flask API Tutorial</a></li>
+        	<li><a href="https://todoist.com">Todoist</a></li>
+        	<li><a href="https://howchoo.com/g/njy4zdm3mwy/how-to-run-a-raspberry-pi-cluster-with-docker-swarm">Running Docker Swarm on a Raspberry Pi Cluster</a></li>
+        </ul>
+        <br>
       </div>
     </div>
 
