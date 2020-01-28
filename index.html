@@ -37,9 +37,42 @@
     <div class="row">
       <div class="col">
       	<br>
+        <img src="oops.jpg" alt="Young girl looking guilty" class="img-fluid, rounded">
+        <h2>Installing Ubuntu: Or, When You Forget You Created A Branch</h2>
+        <i>28/01/2020</i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>So I impulsively decided, over the weekend, to clear Windows 10 off my laptop and install Ubuntu. Nothing like staying inside troubleshooting driver issues on a warm sunny day.
+        <p>I had previously messed around with WSL and <a href="https://multipass.run/">Multipass</a> to try and get linux-like functionality without having to nuke the OS I'm used to, but there were always a couple of things that I couldn't get to work properly. nmap wasn't working in WSL, I couldn't launch Sublime Text from a Multipass VM without doing some weird nonsense with mounting, I briefly considered trying to get X Window or something working somewhere but it just didn't appeal. So off I went.
+        <p>Turns out Ubuntu didn't like the Intel Rapid Storage technology baked into my Dell laptop, and didn't feel like installing. No worries, switch that off in the BIOS and everything went smoothly. Set up Firefox, logged into Lastpass, installed Sublime Text and Spotify, and I've got pretty much everything I need on a daily basis. Turns out there isn't much I use that's actually installed locally.
+        <p>So I start pulling down a couple of the personal repo's I've been tinkering with most recently - in particular my "Hello, World" experiment with docker that somehow turned into a Flask API. And all my unit tests are missing.
+        <p>Well, shit. I must have forgotten to push the changes up to GitHub. No worries, I backed up all my files before I nuked Windows.
+        <p>Voila! There they are. Easy!
+        <p>Except I can't shake this nagging feeling that I definitely pushed the unit test changes up to GitHub, because I compulsively commit and push everything, about as often as I save Word documents. So, often. Oh well.
+        <p>...
+        <p>And at 2am, I remember my unit test changes were in a branch. Not master, which I checked out and subsequently added my unit tests to. Another branch. Called unit-test. Which I didn't pull.
+        <p>Nuke local repo, re-clone, get branch, there are all the tests. Lesson learned.
+        <br>
+        <p>Things that are currently interesting and helpful:
+        <ul>
+        	<li><a href="https://microstack.run/">MicroStack</a></li>
+        	<li><a href="https://www.coursera.org/professional-certificates/google-it-automation">Google IT Automation with Python Professional Certificate</a></li>
+        	<li><a href="https://www.udoo.org/">UDOO</a></li>
+        	<li><a href="https://docs.pytest.org/en/latest/">pytest</a></li>
+        	<li><a href="https://coverage.readthedocs.io/en/coverage-5.0.3/">coveragepy</a></li>
+        </ul>
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+      	<br>
         <img src="404.jpg" alt="Fallen icecream" class="img-fluid, rounded">
         <h2>Containers, DevOps, and Other Things I Don't Understand</h2>
-        <i>17/01/20</i>
+        <i>17/01/2020</i>
       </div>
     </div>
     <div class="row">
