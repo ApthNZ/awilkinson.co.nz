@@ -30,6 +30,42 @@
 
     <div class="row">
       <div class="col">
+        <br>
+        <img src="snap.jpg" alt="Finger and thumb making a snapping motion" class="img-fluid, rounded">
+        <h2>Oh, Snap!</h2>
+        <i>08/05/2020</i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Awhile ago I decided on putting together some sort of homelab, and was keen to get MicroStack up and running. I explored a few options and finally - due to hardware recommendations - settled on an Intel NUC.
+        <p>COVID-19 delays didn't seem to hamper the courier much, and soon enough I had a shiny new box sitting on my desk.
+        <p>My thinking was this - 
+        <ul>
+          <li>MicroStack is a Canonical product aimed at IoT stuff, designed to install via snap packages</li>
+          <li>Ubuntu Core is a Canonical OS aimed at IoT stuff, and is tightly integrated with the snap store</li>
+          <li>Therefore, I should install MicroStack on Core</li>
+        </ul>
+        <p>Did it work? Of course it didn't fucking work. 
+        <p>Core installed on the NUC fine. Got SSH working from my laptop and went to install MicroStack. Apparently, the MicroStack snap package is a "classic" package, which uses a different containment method (?) to regular snap packages, and needs access to the base filesystem (which doesn't sound like containment at all, but whatever).
+        <p>Ubuntu Core, on the other hand, <i>doesn't support classic snap packages</i> because it doesn't have a normal filesystem or something.
+        <p>The "Install OpenStack in a Snap!" product can't run on the snap-heavy OS from the same vendor.
+        <p>FFS.
+        <p>So I'm running Ubuntu Desktop (couldn't be bothered downloading a server image, and apparently they're almost identical if you do a minimal desktop install), and MicroStack seems to be installing ok. 
+        <p>Here's hoping.
+        <br>
+        <p>Things that are currently interesting and helpful:
+        <ul>
+          <li><a href="https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html">Intel NUC</a></li>
+          <li><a href="https://ubuntu.com/core">Ubuntu Core</a></li>
+          <li><a href="https://manpages.ubuntu.com/manpages/precise/man1/ssh-copy-id.1.html">ssh-copy-id</a></li>
+        </ul>
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
       	<br>
         <img src="oops.jpg" alt="Young girl looking guilty" class="img-fluid, rounded">
         <h2>Installing Ubuntu: Or, When You Forget You Created A Branch</h2>
